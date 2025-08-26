@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header, footer {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    header {
+      justify-content: space-between;
+    }
+
+    footer {
+      justify-content: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      height: calc(100vh - 80px);
+    }
+
+    nav {
+      background-color: #f0f0f0;
+      width: 150px;
+      padding: 15px 20px;
+      box-sizing: border-box;
+    }
+
+    nav ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin-bottom: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #3333cc;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+      background: white;
+    }
+
+    main strong {
+      font-weight: bold;
+    }
+
+    label {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <label><input type="checkbox" id="darkModeToggle" /> Dark Mode</label>
+  </header>
+
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Users</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <p><strong>Welcome, Admin!</strong></p>
+      <p>This is the main content area. Add charts, tables, or reports here.</p>
+    </main>
+  </div>
+
+  <footer>
+    <span>© 2025 Admin Panel</span>
+  </footer>
+</body>
+</html>
